@@ -14,7 +14,7 @@ import Room from './pages/Room'
 import BookingsPage from './pages/BookingsPage'
 
 axios.defaults.baseURL = import.meta.env.VITE_API_BASE_URL;
-axios.defaults.withCredentials= true
+
 
 
 function App() {
