@@ -12,7 +12,7 @@ export default function ProfilePage() {
 
   
   async function logout(){
-    await axios.post('/logout')
+    await axios.post('https://back-booking-app.onrender.com/api/logout')
     setRedirect('/')
     setUser(null)
   }

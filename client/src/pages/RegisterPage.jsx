@@ -18,7 +18,7 @@ export default function RegisterPage() {
         }
         try {
 
-            await axios.post('/register',{
+            await axios.post('https://back-booking-app.onrender.com/api/register',{
                 name:name,
                 email:email,
                 password:password

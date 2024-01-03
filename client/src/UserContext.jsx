@@ -15,7 +15,7 @@ export  function UserContextProvider({children}) {
     useEffect(()=>{
       async function fetchData(){
         if(!user){
-          const {data}=await axios.get('/profile');
+          const {data}=await axios.get('https://back-booking-app.onrender.com/api/profile');
           
           setUser(data)
           setUserReady(true)

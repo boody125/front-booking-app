@@ -9,7 +9,7 @@ import BookingDates from '../BookingDates'
 export default function BookingsPage() {
   const [bookings , setBookings]=useState(null)
   useEffect(()=>{
-    axios.get('/bookings').then(res =>{
+    axios.get('https://back-booking-app.onrender.com/api/bookings').then(res =>{
       setBookings(res.data)
     })
   },[])

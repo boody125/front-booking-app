@@ -26,7 +26,7 @@ export default function PlacesFormPage() {
       if (!id){
         return;
       }else{
-        axios.get('/places/'+id).then(response=>{
+        axios.get('https://back-booking-app.onrender.com/api/places/'+id).then(response=>{
           const {data}= response;
           setTitle(data.title);
           setAddress(data.address);

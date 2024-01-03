@@ -7,7 +7,7 @@ import Image from "../Image"
 export default function IndexPage(){
     const [places , setPlaces]=useState([])
     useEffect(()=>{
-        axios.get('/places').then( res =>{
+        axios.get('https://back-booking-app.onrender.com/api/places').then( res =>{
             setPlaces([...res.data,...res.data,...res.data,...res.data,...res.data]);
         })
     },[])

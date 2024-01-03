@@ -71,7 +71,7 @@ export default function BookingCard({place,intervals}) {
                         name,phone,place: place._id, 
                         price : numberOfNights*place.price
                 };
-                const res = await axios.post('/booking', data)
+                const res = await axios.post('https://back-booking-app.onrender.com/api/booking', data)
                 const bookingId= res.data._id
                 setRedirect(`/account/bookings/${bookingId}`);
         }
