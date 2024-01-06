@@ -11,7 +11,7 @@ export default function LoginPage() {
   async function handleSubmit(e){
     e.preventDefault();
     try {
-      const {data}=await axios.post('https://back-booking-app.onrender.com/api/login',{
+      const {data}=await axios.post('/login',{
         email:email,
         password:password
       })

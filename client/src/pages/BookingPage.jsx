@@ -14,7 +14,7 @@ export default function BookingPage() {
 
   useEffect(() => {
     if (id) {
-      axios.get('https://back-booking-app.onrender.com/api/bookings').then(response => {
+      axios.get('/bookings').then(response => {
         
 
 

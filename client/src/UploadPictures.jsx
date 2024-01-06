@@ -11,7 +11,7 @@ export default function UploadPictures({addedPhotos,onChange}) {
 
     async function addPhotoByLink(ev){
         ev.preventDefault();
-        const {data:fileName}= await axios.post('https://back-booking-app.onrender.com/api/upload-with-link',{link:photoLink})
+        const {data:fileName}= await axios.post('/upload-with-link',{link:photoLink})
         onChange([...addedPhotos,fileName])
         
         setPhotoLink('')
