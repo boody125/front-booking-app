@@ -15,7 +15,7 @@ export default function Room() {
     let {id}= useParams()
     useEffect(()=>{
         async function callRoom (){
-            const {data:response}= await axios.get('/room/'+id)
+            const {data:response}= await axios.get(`/places/${id}`)
             // console.log(response)
             setIntervals(response[1])
             setPlace(response[0])
